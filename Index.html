@@ -1,1 +1,1012 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>UP Board Science & Maths | Classes 9 & 10</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#f7f9fc;
+    color:#172033;
+}
+
+/* NAVBAR */
+
+nav{
+    position:sticky;
+    top:0;
+    z-index:1000;
+    background:white;
+    padding:15px 7%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+    color:#4f46e5;
+}
+
+.logo span{
+    color:#111827;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#374151;
+    font-weight:bold;
+}
+
+.join-btn{
+    background:#4f46e5;
+    color:white !important;
+    padding:10px 18px;
+    border-radius:8px;
+}
+
+/* HERO */
+
+.hero{
+    min-height:88vh;
+    padding:70px 7%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:50px;
+    background:linear-gradient(135deg,#eef2ff,#ffffff);
+}
+
+.hero-left{
+    width:55%;
+}
+
+.offer{
+    display:inline-block;
+    background:#fee2e2;
+    color:#dc2626;
+    padding:9px 18px;
+    border-radius:30px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+.hero h1{
+    font-size:52px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero h1 span{
+    color:#4f46e5;
+}
+
+.hero p{
+    font-size:19px;
+    color:#667085;
+    margin-bottom:25px;
+}
+
+.buttons{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 25px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.primary{
+    background:#4f46e5;
+    color:white;
+}
+
+.secondary{
+    border:2px solid #4f46e5;
+    color:#4f46e5;
+    background:white;
+}
+
+/* PRICE CARD */
+
+.price-box{
+    width:360px;
+    background:white;
+    padding:35px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 15px 50px rgba(79,70,229,.18);
+}
+
+.price-box h2{
+    font-size:25px;
+}
+
+.old-price{
+    text-decoration:line-through;
+    color:#9ca3af;
+    font-size:20px;
+    margin-top:15px;
+}
+
+.price{
+    font-size:65px;
+    color:#dc2626;
+    font-weight:bold;
+}
+
+.price span{
+    font-size:22px;
+}
+
+.price-box p{
+    color:#667085;
+}
+
+.price-box .btn{
+    display:block;
+    margin-top:20px;
+}
+
+/* SECTIONS */
+
+section{
+    padding:75px 7%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:45px;
+}
+
+.section-title h2{
+    font-size:38px;
+    margin-bottom:10px;
+}
+
+.section-title p{
+    color:#667085;
+}
+
+/* COURSES */
+
+.course-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:30px;
+}
+
+.course{
+    background:white;
+    padding:35px;
+    border-radius:16px;
+    box-shadow:0 5px 25px rgba(0,0,0,.06);
+}
+
+.course-icon{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.course h3{
+    font-size:27px;
+    margin-bottom:10px;
+}
+
+.course p{
+    color:#667085;
+    margin-bottom:20px;
+}
+
+.course ul{
+    list-style:none;
+}
+
+.course li{
+    padding:8px 0;
+}
+
+/* SUBJECTS */
+
+.subject-section{
+    background:#111827;
+    color:white;
+}
+
+.subject-section .section-title p{
+    color:#cbd5e1;
+}
+
+.subject-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+}
+
+.subject{
+    background:#1f2937;
+    padding:25px;
+    border-radius:12px;
+    text-align:center;
+    border:1px solid #374151;
+}
+
+.subject h3{
+    margin-bottom:7px;
+}
+
+.subject p{
+    color:#cbd5e1;
+    font-size:14px;
+}
+
+/* FEATURES */
+
+.features{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.feature{
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+}
+
+.feature-icon{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.feature h3{
+    margin-bottom:10px;
+}
+
+.feature p{
+    color:#667085;
+}
+
+/* PRICING */
+
+.pricing{
+    background:#eef2ff;
+}
+
+.pricing-card{
+    max-width:500px;
+    margin:auto;
+    background:white;
+    padding:40px;
+    text-align:center;
+    border-radius:20px;
+    border:3px solid #4f46e5;
+}
+
+.pricing-card h3{
+    font-size:28px;
+}
+
+.big-price{
+    color:#dc2626;
+    font-size:65px;
+    font-weight:bold;
+    margin:15px;
+}
+
+.pricing-card ul{
+    list-style:none;
+    text-align:left;
+    margin:25px 0;
+}
+
+.pricing-card li{
+    padding:9px;
+}
+
+/* CONTACT */
+
+.contact{
+    background:#111827;
+    color:white;
+}
+
+.contact-container{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+}
+
+.contact-info h2{
+    font-size:38px;
+    margin-bottom:20px;
+}
+
+.contact-info p{
+    color:#cbd5e1;
+    margin-bottom:25px;
+}
+
+.contact-info div{
+    line-height:2;
+}
+
+form{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    color:#172033;
+}
+
+form h3{
+    font-size:25px;
+    margin-bottom:20px;
+}
+
+input,select{
+    width:100%;
+    padding:14px;
+    margin-bottom:15px;
+    border:1px solid #d1d5db;
+    border-radius:7px;
+    font-size:15px;
+}
+
+button{
+    width:100%;
+    border:none;
+    cursor:pointer;
+    font-size:16px;
+}
+
+/* FOOTER */
+
+footer{
+    background:#030712;
+    color:#9ca3af;
+    padding:30px 7%;
+    text-align:center;
+}
+
+footer strong{
+    color:white;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    width:60px;
+    height:60px;
+    background:#25d366;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-decoration:none;
+    font-size:28px;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+    z-index:2000;
+}
+
+/* MOBILE */
+
+@media(max-width:900px){
+
+    nav ul{
+        display:none;
+    }
+
+    .hero{
+        flex-direction:column;
+        padding-top:50px;
+    }
+
+    .hero-left{
+        width:100%;
+    }
+
+    .hero h1{
+        font-size:40px;
+    }
+
+    .price-box{
+        width:100%;
+        max-width:400px;
+    }
+
+    .course-grid{
+        grid-template-columns:1fr;
+    }
+
+    .subject-grid{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .features{
+        grid-template-columns:1fr 1fr;
+    }
+
+    .contact-container{
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    section{
+        padding:55px 5%;
+    }
+
+    .hero{
+        padding:50px 5%;
+    }
+
+    .hero h1{
+        font-size:34px;
+    }
+
+    .subject-grid,
+    .features{
+        grid-template-columns:1fr;
+    }
+
+    .section-title h2{
+        font-size:30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<nav>
+
+    <div class="logo">
+        Study<span>99</span>
+    </div>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#subjects">Subjects</a></li>
+        <li><a href="#features">Benefits</a></li>
+        <li><a href="#admission" class="join-btn">Join ₹99</a></li>
+    </ul>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero" id="home">
+
+    <div class="hero-left">
+
+        <div class="offer">
+            🔥 SPECIAL OFFER — ONLY ₹99
+        </div>
+
+        <h1>
+            UP Board Class 9 & 10
+            <span>Science & Maths</span>
+        </h1>
+
+        <p>
+            Complete online coaching for UP Board students.
+            Learn Mathematics and Science with simple explanations,
+            chapter-wise preparation, practice questions and exam preparation.
+        </p>
+
+        <div class="buttons">
+
+            <a href="#admission" class="btn primary">
+                Join Classes – ₹99
+            </a>
+
+            <a href="#courses" class="btn secondary">
+                View Courses
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="price-box">
+
+        <h2>Complete Coaching</h2>
+
+        <div class="old-price">
+            ₹999
+        </div>
+
+        <div class="price">
+            ₹99<span>/course</span>
+        </div>
+
+        <p>
+            Limited-time admission offer
+        </p>
+
+        <a href="#admission" class="btn primary">
+            Enroll Now
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- COURSES -->
+
+<section id="courses">
+
+    <div class="section-title">
+
+        <h2>Choose Your Class</h2>
+
+        <p>
+            Focused coaching for UP Board Class 9 and Class 10.
+        </p>
+
+    </div>
+
+
+    <div class="course-grid">
+
+        <div class="course">
+
+            <div class="course-icon">📐</div>
+
+            <h3>Class 9</h3>
+
+            <p>
+                Build strong foundations in Mathematics and Science.
+            </p>
+
+            <ul>
+                <li>✅ Mathematics</li>
+                <li>✅ Science</li>
+                <li>✅ Chapter-wise Classes</li>
+                <li>✅ Practice Questions</li>
+                <li>✅ Exam Preparation</li>
+            </ul>
+
+            <br>
+
+            <a href="#admission" class="btn primary">
+                Join Class 9 – ₹99
+            </a>
+
+        </div>
+
+
+        <div class="course">
+
+            <div class="course-icon">🎯</div>
+
+            <h3>Class 10</h3>
+
+            <p>
+                Board-focused preparation for Mathematics and Science.
+            </p>
+
+            <ul>
+                <li>✅ Mathematics</li>
+                <li>✅ Science</li>
+                <li>✅ Important Questions</li>
+                <li>✅ Previous Year Questions</li>
+                <li>✅ Board Exam Preparation</li>
+            </ul>
+
+            <br>
+
+            <a href="#admission" class="btn primary">
+                Join Class 10 – ₹99
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SUBJECTS -->
+
+<section class="subject-section" id="subjects">
+
+    <div class="section-title">
+
+        <h2>Science & Mathematics</h2>
+
+        <p>
+            Only the subjects you need — nothing unnecessary.
+        </p>
+
+    </div>
+
+
+    <div class="subject-grid">
+
+        <div class="subject">
+            <h3>📐 Mathematics</h3>
+            <p>Algebra, Geometry & more</p>
+        </div>
+
+        <div class="subject">
+            <h3>⚡ Physics</h3>
+            <p>Concepts & numerical problems</p>
+        </div>
+
+        <div class="subject">
+            <h3>🧪 Chemistry</h3>
+            <p>Reactions & important concepts</p>
+        </div>
+
+        <div class="subject">
+            <h3>🧬 Biology</h3>
+            <p>Important diagrams & concepts</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section id="features">
+
+    <div class="section-title">
+
+        <h2>Why Study With Us?</h2>
+
+        <p>
+            Affordable learning designed for UP Board students.
+        </p>
+
+    </div>
+
+
+    <div class="features">
+
+        <div class="feature">
+
+            <div class="feature-icon">💰</div>
+
+            <h3>Only ₹99</h3>
+
+            <p>
+                Quality education at an extremely affordable price.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">🎥</div>
+
+            <h3>Online Classes</h3>
+
+            <p>
+                Learn from home using your mobile phone.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">📚</div>
+
+            <h3>Study Material</h3>
+
+            <p>
+                Chapter-wise notes and practice material.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">📝</div>
+
+            <h3>Practice Questions</h3>
+
+            <p>
+                Practice important questions after every chapter.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">🎯</div>
+
+            <h3>Board Preparation</h3>
+
+            <p>
+                Focus on important concepts and exam questions.
+            </p>
+
+        </div>
+
+
+        <div class="feature">
+
+            <div class="feature-icon">📱</div>
+
+            <h3>Mobile Friendly</h3>
+
+            <p>
+                Study comfortably from your smartphone.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PRICING -->
+
+<section class="pricing">
+
+    <div class="section-title">
+
+        <h2>Simple Pricing</h2>
+
+        <p>
+            Start learning without worrying about expensive fees.
+        </p>
+
+    </div>
+
+
+    <div class="pricing-card">
+
+        <h3>Science + Mathematics</h3>
+
+        <div class="big-price">
+            ₹99
+        </div>
+
+        <p>
+            One-time course enrollment
+        </p>
+
+        <ul>
+
+            <li>✅ Class 9 / Class 10</li>
+            <li>✅ Mathematics</li>
+            <li>✅ Science</li>
+            <li>✅ Video Classes</li>
+            <li>✅ Study Material</li>
+            <li>✅ Practice Questions</li>
+            <li>✅ Exam Preparation</li>
+
+        </ul>
+
+        <a href="#admission" class="btn primary">
+            Get Started for ₹99
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ADMISSION -->
+
+<section class="contact" id="admission">
+
+    <div class="contact-container">
+
+        <div class="contact-info">
+
+            <h2>
+                Start Learning Today
+            </h2>
+
+            <p>
+                Fill the form and we'll contact you on WhatsApp
+                with the admission details.
+            </p>
+
+            <div>
+
+                📚 UP Board Class 9 & 10<br>
+
+                📐 Mathematics + Science<br>
+
+                💰 Course Fee: ₹99<br>
+
+                📱 Online Learning
+
+            </div>
+
+        </div>
+
+
+        <form onsubmit="sendWhatsApp(event)">
+
+            <h3>Admission Enquiry</h3>
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Student Name"
+                required
+            >
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Mobile Number"
+                required
+            >
+
+            <select id="class" required>
+
+                <option value="">
+                    Select Class
+                </option>
+
+                <option value="Class 9">
+                    Class 9
+                </option>
+
+                <option value="Class 10">
+                    Class 10
+                </option>
+
+            </select>
+
+            <select id="subject" required>
+
+                <option value="">
+                    Select Subject
+                </option>
+
+                <option value="Mathematics">
+                    Mathematics
+                </option>
+
+                <option value="Science">
+                    Science
+                </option>
+
+                <option value="Science + Mathematics">
+                    Science + Mathematics
+                </option>
+
+            </select>
+
+            <button
+                type="submit"
+                class="btn primary"
+            >
+                Enquire on WhatsApp
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>
+        © 2026 <strong>Study99</strong>
+    </p>
+
+    <p>
+        UP Board Class 9 & 10 | Science & Mathematics
+    </p>
+
+</footer>
+
+
+<!-- WHATSAPP FLOATING BUTTON -->
+
+<a
+    class="whatsapp"
+    href="https://wa.me/919876543210?text=Hello%2C%20I%20want%20to%20join%20UP%20Board%20Science%20and%20Maths%20coaching."
+    target="_blank"
+>
+    💬
+</a>
+
+
+<script>
+
+function sendWhatsApp(event){
+
+    event.preventDefault();
+
+    const name =
+        document.getElementById("name").value;
+
+    const phone =
+        document.getElementById("phone").value;
+
+    const studentClass =
+        document.getElementById("class").value;
+
+    const subject =
+        document.getElementById("subject").value;
+
+
+    const whatsappNumber =
+        "919876543210";
+
+
+    const message =
+        "Hello, I want to join your UP Board coaching.%0A%0A" +
+
+        "Student Name: " + name + "%0A" +
+
+        "Mobile: " + phone + "%0A" +
+
+        "Class: " + studentClass + "%0A" +
+
+        "Subject: " + subject + "%0A%0A" +
+
+        "Course Fee: ₹99";
+
+
+    window.open(
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        message,
+        "_blank"
+    );
+}
+
+</script>
+
+</body>
+                  </html>
